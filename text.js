@@ -7,12 +7,11 @@ function random() {
         if (err) {
             return console.log("THERE WAS AN ERROR... RUNNNNN");
         }
-        console.log(typeof result.guess);
         array.push(result.guess);
         if (result.guess === number) {
-            return console.log(n=umber + " is the right guess!");
+            return console.log(number + " is the right guess!");
         }
-        else if (array.length == 4) {
+        else if (array.length === 4) {
             return console.log("WRONG... that was your last try, you guessed " + array + " but the answer was " + number);
         }
         else {
