@@ -1,5 +1,5 @@
 var prompt = require('prompt');
-var number = Math.round(10 * Math.random()).toString();
+var number = Math.round(100 * Math.random()).toString();
 var array = [];
 
 function random() {
