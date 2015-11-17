@@ -1,5 +1,5 @@
 var prompt = require('prompt');
-var number = Math.round(100 * Math.random()).toString();
+var number = Math.round(100 * Math.random());
 var array = [];
 
 function random() {
@@ -7,8 +7,8 @@ function random() {
         if (err) {
             return console.log("THERE WAS AN ERROR... RUNNNNN");
         }
-        array.push(result.guess);
-        if (result.guess === number) {
+        array.push(Number(result.guess));
+        if (Number(result.guess) === number) {
             return console.log(number + " is the right guess!");
         }
         else if (array.length === 4) {
